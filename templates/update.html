@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="class">
+    <div class="card-header">
+        <h5 class="crad-title">Task Update</h5>
+    </div>
+
+    <div class="card-body">
+        <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit" class="byn btn-success">UPDATE</button>
+        </form>
+    </div>
+</div>
+
+
+
+{% endblock %}
